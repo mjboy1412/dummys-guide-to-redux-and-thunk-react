@@ -1,7 +1,7 @@
 export function itemsHasError(state = false, action) {
     switch (action.type) {
-        case 'ITEMS_HAS_ERRORED':
-            return action.hasErrored;
+        case 'ITEMS_HAS_ERROR':
+            return action.hasError;
         default:
             return state;
     }
@@ -11,6 +11,8 @@ export function itemsIsLoading(state = false, action) {
     switch (action.type) {
         case 'ITEMS_IS_LOADING':
             return action.isLoading;
+        default:
+            return state;
     }
 }
 
